@@ -55,7 +55,7 @@ nav button.active{color:var(--pink)}
   <div style="text-align:center;font-size:45px">🎮❤️</div>
   <h1 style="text-align:center">Create your player</h1>
   <p class="muted" style="text-align:center">Start your gaming journey.</p>
-  <form id="registerForm">
+  <form id="registerForm" onsubmit="return false;">
     <label>Gamer name</label><input id="regName" maxlength="24" required>
     <label>Permanent Game ID</label>
     <input id="regId" minlength="3" maxlength="8" pattern="(?=.*[A-Z])[A-Za-z0-9]{3,8}" title="3–8 letters/numbers and at least one uppercase letter" required placeholder="Example: Goldin7">
